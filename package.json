@@ -1,0 +1,24 @@
+{
+  "name": "exercises",
+  "version": "1.0.0",
+  "description": "- La aplicación es una simulación de un robot de juguete que se mueve sobre una mesa cuadrada, de dimensiones 5 unidades x 5 unidades. - No hay otras obstrucciones en la superficie de la mesa. - El robot puede deambular libremente por la superficie de la mesa, pero debe evitarse que caiga y se destruya. Debe evitarse cualquier movimiento que pueda provocar la caída del robot de la mesa; sin embargo, aún se deben permitir otros comandos de movimiento válidos. - Cree una aplicación que pueda leer en comandos de la siguiente forma:",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc && node simulation.js",
+    "dev": "nodemon -e ts  --exec \"npm run compile\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/D3vaya/toy-robot-typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/D3vaya/toy-robot-typescript/issues"
+  },
+  "homepage": "https://github.com/D3vaya/toy-robot-typescript#readme",
+  "devDependencies": {
+    "typescript": "^4.4.4"
+  }
+}

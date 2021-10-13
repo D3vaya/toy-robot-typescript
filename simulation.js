@@ -1,0 +1,21 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var board_1 = __importDefault(require("./clases/board"));
+var robot_1 = require("./clases/robot");
+var robot_2 = __importDefault(require("./clases/robot"));
+var point_1 = __importDefault(require("./clases/point"));
+var board = new board_1.default();
+board.generate();
+var p = new point_1.default(2, 2);
+var robot = new robot_2.default(p, robot_1.Orientation.WEST);
+// board.print();
+robot.report();
+robot.move();
+robot.left();
+robot.left();
+robot.report();
+robot.move();
+robot.report();
