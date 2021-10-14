@@ -42,9 +42,9 @@ var Robot = /** @class */ (function () {
                 this.position.x++;
                 break;
         }
+        this.commands.push(Command.MOVE);
     };
     Robot.prototype.left = function () {
-        this.commands.push(Command.);
         switch (this.orietation) {
             case "NORTH":
                 this.orietation = Orientation.WEST;
@@ -59,6 +59,7 @@ var Robot = /** @class */ (function () {
                 this.orietation = Orientation.EAST;
                 break;
         }
+        this.commands.push(Command.LEFT);
     };
     Robot.prototype.right = function () {
         switch (this.orietation) {
@@ -75,9 +76,11 @@ var Robot = /** @class */ (function () {
                 this.orietation = Orientation.WEST;
                 break;
         }
+        this.commands.push(Command.RIGHT);
     };
     Robot.prototype.report = function () {
         console.log("(" + this.position.x + ", " + this.position.y + ", " + this.orietation + ")");
+        this.commands.push(Command.REPORT);
     };
     return Robot;
 }());
